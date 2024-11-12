@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "tutorialmod",
+	"version": "${version}",
+	"name": "tutorialmod",
+	"description": "Tutorial Mod for yt.",
+	"authors": [
+		"BeeMan"
+	],
+	"contact": {
+		"homepage": "https://www.youtube.com/@BeeMan_%EB%B9%84%EB%A7%A8",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/tutorialmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.beeman.tutorialmod.TutorialMod"
+		],
+		"fabric-datagen": [
+			"net.beeman.tutorialmod.TutorialModDataGenerator"
+		],
+		"client": [
+			"net.beeman.tutorialmod.TutorialModClient"
+		]
+	},
+	"mixins": [
+		"tutorialmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.20.4",
+		"java": ">=17",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
